@@ -1,7 +1,7 @@
 <template>
   <a
     href="#"
-    :class="`nav-link ${
+    :class="`nav-link ${logoClass || ''} ${
       activeName === name || activeUrl === url ? 'nav-link--active' : ''
     }`"
   >
@@ -18,6 +18,7 @@ export default {
     url: String,
     name: String,
     className: String,
+    logoClass: String,
     activeName: String,
     activeUrl: String,
   },

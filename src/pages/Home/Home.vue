@@ -2,7 +2,6 @@
   <div class="home">
     <NavBar />
     <swiper
-      :modules="modules"
       :autoplay="{ delay: 4000, disableOnInteraction: false }"
       :slides-per-view="1"
       :loop="true"
@@ -12,8 +11,7 @@
       <swiper-slide><SwiperContent /></swiper-slide>
     </swiper>
     <swiper
-      :modules="modules"
-      :autoplay="{ delay: 4000, disableOnInteraction: false }"
+        :autoplay="{ delay: 4000, disableOnInteraction: false }"
       :loop="true"
       :breakpoints="SWIPER_BREAKPOINTS"
       :loopFillGroupWithBlank="true"

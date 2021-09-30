@@ -7,6 +7,7 @@
             :activeUrl="activeUrl"
             :activeName="activeName"
             :url="LOGO_URL"
+            :logoClass="'nav-link--logo'"
           />
         </div>
         <div

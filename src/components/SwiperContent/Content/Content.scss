@@ -1,6 +1,11 @@
 .content {
   padding-top: 10.4rem;
   padding-left: 14.9rem;
+  &__circles{
+    width: 6.8rem;
+    margin-top: 9.3rem;
+    @include flex($justify: space-between);
+  }
   &__title {
     max-width: 56.8rem;
     @include fontStyles(5.6rem, $bold, 6.5rem);
@@ -21,6 +26,9 @@
 }
 @media (max-width: $mq-largest) {
   .content {
+    &__circles{
+      margin-top: 4.3rem;
+    }
     padding-top: 2rem;
     padding-left: 2rem;
     }

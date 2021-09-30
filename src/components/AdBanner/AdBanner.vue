@@ -21,7 +21,7 @@ export default {
   props: {
     title: String,
     content: String,
-    icons: String,
+    icons: Array,
     button: String,
     image: String,
   },

@@ -1,6 +1,7 @@
 .nav-bar {
   min-height: 4rem;
   background-color: white;
+  box-shadow: $navbar-shadow;
   &-container {
     height: 8.1rem;
     margin: 0 14.5rem;

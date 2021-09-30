@@ -10,14 +10,24 @@
       >
       Spiesz się, czas trwania promocji do końca lutego.
     </div>
-    <Button name="Zamów online" className="button--content"/>
+    <Button name="Zamów online" className="button--content" />
+    <div class="content__circles">
+      <Images v-for="(url, index) in CONTENT_CIRLES" :key="url + index" :url="url" />
+    </div>
   </div>
 </template>
 <script>
 import Button from "@/ui/Atoms/Button/Button.vue";
+import Images from "@/ui/Atoms/Images/Images.vue";
+import { CONTENT_CIRLES } from '@/constants';
 export default {
   name: "Content",
-  components: { Button },
+  components: { Button, Images },
+    data() {
+    return {
+      CONTENT_CIRLES,
+    };
+  },
 };
 </script>
 <style lang="scss">

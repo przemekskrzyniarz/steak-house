@@ -4,6 +4,7 @@
   background-color: $hover-backgroud;
   border-radius: $radius-md;
   border: 1px solid $hover-backgroud;
+  @include clickable;
   transition: 0.2s;
   &:hover,
   :visited {
