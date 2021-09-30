@@ -1,4 +1,4 @@
-export const LOGO_URL = "l.png";
+export const LOGO_URL = { url: "l.png", alt: "Logo byczej głowy" };
 export const LOGO_URL_2X = "l@2x.png";
 export const HEADER_LINK_NAMES = [
   "Steaks",
@@ -12,22 +12,25 @@ export const LINKS_WITH_NAME = [
   {
     url: "mojekonto.svg",
     name: "Moje konto",
+    alt: "Ikona człowieka od pasa w góre",
   },
   {
     url: "koszyk.svg",
     name: "Koszyk",
+    alt: "Ikona koszyka",
   },
   {
     url: "zamow_ikona.svg",
     name: "Zamów",
+    alt: "Ikona koszyka",
   },
 ];
 export const LOGO_LINKS = [
-  "Bitmap-4.png",
-  "e.png",
-  "Bitmap.png",
-  "Bitmap-2.png",
-  "Bitmap-3.png",
+  { url: "Bitmap-4.png", alt: "Logo pyszne.pl" },
+  { url: "e.png", alt: "Logo DeliGoo" },
+  { url: "Bitmap.png", alt: "Logo Glovo" },
+  { url: "Bitmap-2.png", alt: "Logo UberEats" },
+  { url: "Bitmap-3.png", alt: "Logo BoltFood" },
 ];
 export const SWIPER_BREAKPOINTS = {
   "1500": {
@@ -47,5 +50,13 @@ export const SWIPER_BREAKPOINTS = {
     slidesPerGroup: 1,
   },
 };
-export const BANNER_ICONS = ['Group 4.svg','App_Store_(iOS).svg','huawei-app-badge-9757fa 2.svg']
-export const CONTENT_CIRLES = ['Oval.svg','Oval Copy 5.svg','Oval Copy 2.svg']
+export const BANNER_ICONS = [
+  { url: "Group 4.svg", alt: "Ikona google play store" },
+  { url: "App_Store_(iOS).svg", alt: "Ikona iOS store" },
+  { url: "huawei-app-badge-9757fa 2.svg", alt: "Ikona huawei app" },
+];
+export const CONTENT_CIRLES = [
+  "Oval.svg",
+  "Oval Copy 5.svg",
+  "Oval Copy 2.svg",
+];

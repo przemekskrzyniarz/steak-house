@@ -5,7 +5,7 @@
       activeName === name || activeUrl === url ? 'nav-link--active' : ''
     }`"
   >
-    <Images v-if="url" :class="className" :url="url" />
+    <Images v-if="url" :class="className" :url="url" :alt="alt"/>
     <span v-if="name" class="nav-link__title">{{ name }}</span>
   </a>
 </template>
@@ -17,6 +17,7 @@ export default {
   props: {
     url: String,
     name: String,
+    alt: String,
     className: String,
     logoClass: String,
     activeName: String,
