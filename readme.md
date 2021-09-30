@@ -59,7 +59,7 @@ npm run serve
  INFO  Starting development server...
 
 App running at:
-- Local:   http://localhost:8080/
+- Local:   http://localhost:8080/steak-house/
 ```
 
 The application should be available [in a browser](http://localhost:8080).
