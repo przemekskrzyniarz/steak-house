@@ -17,8 +17,8 @@
       :loopFillGroupWithBlank="true"
       class="home__logo-slider"
     >
-      <swiper-slide v-for="(url, index) in LOGO_LINKS" :key="url + index"
-        ><Images :url="url"
+      <swiper-slide v-for="({url, alt}, index) in LOGO_LINKS" :key="url + index"
+        ><Images :url="url" :alt="alt"
       /></swiper-slide>
     </swiper>
     <div class="home__banner">

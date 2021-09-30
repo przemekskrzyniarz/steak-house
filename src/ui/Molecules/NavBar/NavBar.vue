@@ -2,12 +2,13 @@
   <header class="nav-bar">
     <div class="nav-bar-container">
       <div class="nav-bar-container__content">
-        <div @click="(activeName = ''), (activeUrl = LOGO_URL)">
+        <div @click="(activeName = ''), (activeUrl = LOGO_URL.url)">
           <NavLink
             :activeUrl="activeUrl"
             :activeName="activeName"
-            :url="LOGO_URL"
+            :url="LOGO_URL.url"
             :logoClass="'nav-link--logo'"
+            :alt="LOGO_URL.alt"
           />
         </div>
         <div
@@ -24,13 +25,14 @@
       </div>
       <div class="nav-bar-container__content">
         <div
-          v-for="({ url, name }, index) in LINKS_WITH_NAME"
+          v-for="({ url, name, alt }, index) in LINKS_WITH_NAME"
           @click="(activeName = name), (activeUrl = url)"
           :key="name + index"
         >
           <NavLink
             :name="name"
             :url="url"
+            :alt="alt"
             :activeName="activeName"
             :activeUrl="activeUrl"
             :className="'images--svg'"
