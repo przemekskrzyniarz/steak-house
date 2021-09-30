@@ -2,7 +2,7 @@
   <header class="nav-bar">
     <div class="nav-bar-container">
       <div class="nav-bar-container__content">
-        <div @click="(activeName = ''), (activeUrl = LOGO_URL.url)">
+        <div @click="(activeName = ''), (activeUrl = '')">
           <NavLink
             :activeUrl="activeUrl"
             :activeName="activeName"
