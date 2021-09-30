@@ -4,7 +4,7 @@
     class="ad-banner"
   >
     <div v-html="title" />
-    <div class="ad-banner__content" v-html="content" />
+    <div :class="`ad-banner__content ${icons ? 'ad-banner__content--with-icons' : ''}`" v-html="content" />
     <div v-if="icons" class="ad-banner__icons">
       <a class="icon" href="#" v-for="(url, index) in icons" :key="url + index">
         <Images :url="url" />
