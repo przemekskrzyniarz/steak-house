@@ -15,12 +15,16 @@
   &__content {
     @include fontStyles(2rem, $light, 3.2rem);
     color: $white;
-    margin-bottom: 3.2rem;
+    margin-bottom: 0 !important;
+    &--with-icons{
+      margin-bottom: 1.4rem;
+    }
     &--first {
       max-width: 30rem;
     }
     &--second {
       max-width: 32.4rem;
+      margin-bottom: 0.8rem !important;
     }
     &-bg-black {
       background-color: $black;
@@ -44,4 +48,3 @@
         padding-left: 3.5rem;
     }
   }
-  
