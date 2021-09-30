@@ -1,6 +1,7 @@
 .home {
     height: 100vh;
     &__logo-slider {
+      max-width: 135rem;
       margin: 20px auto;
       .swiper-wrapper {
         align-items: center;
