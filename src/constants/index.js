@@ -48,3 +48,4 @@ export const SWIPER_BREAKPOINTS = {
   },
 };
 export const BANNER_ICONS = ['Group 4.svg','App_Store_(iOS).svg','huawei-app-badge-9757fa 2.svg']
+export const CONTENT_CIRLES = ['Oval.svg','Oval Copy 5.svg','Oval Copy 2.svg']

@@ -1,3 +1,14 @@
 .images {
   transition: 0.2s;
+  &--swiper{
+
+  }
+}
+
+@media (max-width: $mq-medium) {
+  .images {
+    &--swiper{
+      order: -1;
+    }
+  }
 }

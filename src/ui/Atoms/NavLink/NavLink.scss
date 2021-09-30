@@ -1,6 +1,6 @@
 .nav-link {
   height: 5.7rem;
-  padding: 0 3.1rem;
+  padding: 0 2.5rem;
   border-radius: $radius-md;
   @include flex($justify: space-evenly);
   flex-direction: column;
@@ -17,6 +17,17 @@
   }
   &:visited {
     color: $black;
+  }
+  &--logo {
+    padding-left: 0;
+    &:hover,
+    &:active {
+      color: $black !important;
+      background-color: $white;
+      img {
+        filter: invert(0);
+      }
+    }
   }
   &--active {
     color: $white !important;
