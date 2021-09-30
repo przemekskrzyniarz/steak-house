@@ -42,6 +42,15 @@
   }
 }
 
+
+@media (max-width: $mq-largest) {
+  .nav-link {
+    &--logo {
+      padding-left: 2rem;
+    }
+  }
+}
+
 @media (max-width: $mq-large) {
   .nav-link {
     display: none;

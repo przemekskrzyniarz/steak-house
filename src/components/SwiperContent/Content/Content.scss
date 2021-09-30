@@ -29,8 +29,7 @@
     &__circles{
       margin-top: 4.3rem;
     }
-    padding-top: 2rem;
-    padding-left: 2rem;
+    padding: 2rem 2rem 0 2rem;
     }
 }
 
@@ -38,8 +37,6 @@
   .content {
     @include flex;
     flex-direction: column;
-    padding-top: 2rem;
-    padding-left: 2rem;
     &__title {
       text-align: center;
       max-width: fit-content;
