@@ -1,0 +1,40 @@
+.content {
+  padding-top: 10.4rem;
+  padding-left: 14.9rem;
+  &__title {
+    max-width: 56.8rem;
+    @include fontStyles(5.6rem, $bold, 6.5rem);
+    .title-bg {
+      color: $white;
+      background-color: $black;
+    }
+  }
+  &__title-content {
+    max-width: 40.6rem;
+    margin-top: 2.8rem;
+    margin-bottom: 3.6rem;
+    @include fontStyles(2rem, $lighter, 2.5rem, $rubik);
+    &--bold{
+        font-weight: $normal;
+    }
+  }
+}
+@media (max-width: $mq-largest) {
+  .content {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    }
+}
+
+@media (max-width: $mq-large) {
+  .content {
+    @include flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    &__title {
+      text-align: center;
+      max-width: fit-content;
+    }
+    }
+}

@@ -1,0 +1,31 @@
+.home {
+    height: 100vh;
+    &__logo-slider {
+      margin: 20px auto;
+      .swiper-wrapper {
+        align-items: center;
+      }
+      .swiper-slide {
+        @include flex($justify: center);
+      }
+    }
+    &__banner {
+      height: 41.5rem;
+      padding: 0 4rem 9rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 0.8rem;
+    }
+  }
+  
+  @media (max-width: $mq-medium) {
+    .home {
+      &__banner {
+        height: 90rem;
+        padding: 0 4rem 1rem;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+      }
+    }
+  }
+  

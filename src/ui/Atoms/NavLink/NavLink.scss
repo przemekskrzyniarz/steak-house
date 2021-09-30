@@ -1,0 +1,38 @@
+.nav-link {
+  height: 5.7rem;
+  padding: 0 3.1rem;
+  border-radius: $radius-md;
+  @include flex($justify: space-evenly);
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover,
+  &:active {
+    color: $white !important;
+    background-color: $hover-backgroud;
+    img {
+      filter: invert(1);
+    }
+  }
+  &:visited {
+    color: $black;
+  }
+  &--active {
+    color: $white !important;
+    background-color: $hover-backgroud;
+    img {
+      filter: invert(1);
+    }
+  }
+  &__title {
+    @include fontStyles;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $mq-large) {
+  .nav-link {
+    display: none;
+  }
+}

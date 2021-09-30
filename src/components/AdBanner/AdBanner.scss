@@ -1,0 +1,47 @@
+.ad-banner {
+  padding-top: 8.2rem;
+  padding-left: 12.5rem;
+  border-radius: $radius-s;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  &__title {
+    @include fontStyles(3.5rem, $bold, 3.2rem);
+    color: $white;
+    margin-top: 0;
+    margin-bottom: 2.9rem;
+  }
+  &__content {
+    @include fontStyles(2rem, $light, 3.2rem);
+    color: $white;
+    margin-bottom: 3.2rem;
+    &--first {
+      max-width: 30rem;
+    }
+    &--second {
+      max-width: 32.4rem;
+    }
+    &-bg-black {
+      background-color: $black;
+    }
+    &-bg-red {
+      background-color: $hover-backgroud;
+    }
+  }
+  &__icons {
+    @include flex;
+    margin-bottom: 2.4rem;
+    .icon {
+      margin-right: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: $mq-medium) {
+    .ad-banner {
+        padding-top: 8.2rem;
+        padding-left: 3.5rem;
+    }
+  }
+  

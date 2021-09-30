@@ -1,0 +1,20 @@
+.button {
+  @include fontStyles;
+  color: $white;
+  background-color: $hover-backgroud;
+  border-radius: $radius-md;
+  border: 1px solid $hover-backgroud;
+  transition: 0.2s;
+  &:hover,
+  :visited {
+    @include buttonAction;
+  }
+  &:active {
+    @include buttonAction;
+    box-shadow: 0px 5px 15px 5px rgba($hover-backgroud, 0.15);
+  }
+  &--content {
+    padding: 1.7rem 5.6rem;
+    margin-bottom: 3rem;
+  }
+}

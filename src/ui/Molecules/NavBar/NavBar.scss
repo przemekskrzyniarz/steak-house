@@ -1,0 +1,60 @@
+.nav-bar {
+  min-height: 4rem;
+  background-color: white;
+  &-container {
+    height: 8.1rem;
+    margin: 0 14.5rem;
+    @include flex($justify: space-between);
+    &__content {
+      @include flex;
+    }
+  }
+
+  @media (max-width: $mq-largest) {
+    .nav-bar {
+      height: 4rem;
+      width: 10px;
+      &-container {
+        margin: 1.2rem 0;
+      }
+    }
+  }
+
+  @media (max-width: $mq-large) {
+    .nav-bar {
+      height: 4rem;
+      &-container {
+        width: 2.5rem;
+        height: 0.3rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        display: block;
+        position: relative;
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+        background: #000;
+        &:after {
+          content: "";
+          width: 2.5rem;
+          height: 0.3rem;
+          position: absolute;
+          left: 0;
+          top: 0.7rem;
+          background: #000;
+        }
+        &:before {
+          content: "";
+          width: 2.5rem;
+          height: 0.3rem;
+          position: absolute;
+          left: 0;
+          bottom: 0.7rem;
+          background: #000;
+        }
+        &__container {
+          display: none;
+        }
+      }
+    }
+  }
+}
