@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/steak-house/',
   css: {
     loaderOptions: {
       sass: {
