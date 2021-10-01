@@ -1,5 +1,5 @@
 <template>
-  <header class="nav-bar">
+  <div class="nav-bar">
     <div class="nav-bar-container">
       <div class="nav-bar-container__content">
         <div @click="(activeName = ''), (activeUrl = '')">
@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
