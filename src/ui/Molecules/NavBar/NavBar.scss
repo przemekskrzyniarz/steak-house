@@ -1,31 +1,41 @@
-.nav-bar {
-  min-height: 4rem;
+.header {
+  min-height: 40px;
   background-color: white;
   box-shadow: $navbar-shadow;
-  &-container {
-    height: 8.1rem;
-    margin: 0 14.5rem;
-    @include flex($justify: space-between);
-    &__content {
-      @include flex;
+  .nav-bar {
+    &-container {
+      height: 8.1rem;
+      margin: 0 14.5rem;
+      @include flex($justify: space-between);
+      &__content {
+        @include flex;
+      }
     }
   }
 }
-  @media (max-width: $mq-largest) {
+@media (max-width: $mq-largest) {
+  .header {
     .nav-bar {
       &-container {
         margin: 0 0;
       }
     }
   }
+}
 
-  @media (max-width: $mq-large) {
+@media (max-width: $mq-large) {
+  .header {
+    padding-left: 12px;
+    padding-top: 4px;
     .nav-bar {
+      width: 28px;
+      height: 28px;
+      @include clickable;
       &-container {
         width: 2.5rem;
         height: 0.2rem;
-        top: 12px;
-        left: 12px;
+        top: 8px;
+        left: 4px;
         display: block;
         position: relative;
         -webkit-transform: translateY(6px);
@@ -55,3 +65,4 @@
       }
     }
   }
+}
