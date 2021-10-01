@@ -5,6 +5,7 @@
       :autoplay="{ delay: 4000, disableOnInteraction: false }"
       :slides-per-view="1"
       :loop="true"
+      :allowTouchMove="false"
     >
       <swiper-slide><SwiperContent /></swiper-slide>
       <swiper-slide><SwiperContent /></swiper-slide>
@@ -13,6 +14,7 @@
     <swiper
       :autoplay="{ delay: 4000, disableOnInteraction: false }"
       :loop="true"
+      :allowTouchMove="false"
       :breakpoints="SWIPER_BREAKPOINTS"
       :loopFillGroupWithBlank="true"
       class="home__logo-slider"
