@@ -10,25 +10,22 @@
       @include flex;
     }
   }
-
+}
   @media (max-width: $mq-largest) {
     .nav-bar {
-      height: 4rem;
-      width: 10px;
       &-container {
-        margin: 1.2rem 0;
+        margin: 0 0;
       }
     }
   }
 
   @media (max-width: $mq-large) {
     .nav-bar {
-      height: 4rem;
       &-container {
         width: 2.5rem;
-        height: 0.3rem;
-        margin-top: 2rem;
-        margin-left: 2rem;
+        height: 0.2rem;
+        top: 12px;
+        left: 12px;
         display: block;
         position: relative;
         -webkit-transform: translateY(6px);
@@ -58,4 +55,3 @@
       }
     }
   }
-}
